@@ -1,0 +1,150 @@
+ /* SECTION Text Colour  */
+.text-green{
+    color: var(--lightgreen);
+}
+
+.text-blue{
+    color: var(--lightblue);
+}
+
+.bg-light{
+    background-color: white;
+    color:var(--darkgrey) ;
+}
+ /* SECTION Buttons  */
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: white;
+    border: none;
+    color: var(--darkgrey);
+}
+
+.btn-primary,
+.bg-primary{
+    background-color: var(--lightgreen);
+    color: white;
+}
+
+.btn-secondary,
+.bg-secondary{
+    background-color: var(--lightblue);
+    color: white;
+}
+
+.btn-dark,
+.bg-dark{
+    background-color: var(--darkgrey);
+    color: white;
+}
+.btn-light,
+.bg-light{
+    background-color: #f4f4f4;
+    color: var(--darkgrey);
+}
+.bg-transparent{
+    background: transparent;
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.btn:hover{
+    opacity: .5;
+}
+
+
+ /* SECTION Padding  */
+.pd-10{
+    padding: 10px;
+}
+.pd-20{
+    padding: 20px;
+}
+.pd-30{
+    padding: 30px;
+}
+
+ /* SECTION DISPLAY FLEXBOX  */
+
+.flex-items{
+    display: flex;
+}
+.row-reverse{
+    flex-flow: row-reverse nowrap;
+}
+
+.column-reverse{
+    flex-flow: column-reverse nowrap;
+}
+
+.flex-items .row{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.flex-items .column{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* SECTION Mobile Responsive  */
+
+@media all and (max-width:768px){
+
+    .content h1{
+        font-size: 45px;
+    }
+    .navbar{
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 100px;
+    }
+
+    .nav-pills{
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        padding: 5px 10px;
+        margin: 0 3px;
+    }
+
+    .flex-items{
+        flex-flow: column;
+    }
+
+    .solution .column-2{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-team .flex-items .column img{
+     width: 70%;
+    }
+
+    .contact-form .form-control label{
+        text-align: left;
+    }
+
+    .blog-post .flex-items{
+        flex-flow: row nowrap;
+    }
+
+}
+
